@@ -1,0 +1,8 @@
+.game {
+    margin: 10px;
+}
+
+#year_released {
+    height: 60px;
+    overflow: auto;
+}
