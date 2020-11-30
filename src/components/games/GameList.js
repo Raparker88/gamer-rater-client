@@ -19,7 +19,7 @@ export const GameList = (props) => {
         <article className="games">
             {
                 games.map(game => {
-                    return <section key={`game--${game.id}`} className="game">
+                    return <section key={`game--${game.id}`} className="game" onClick={()=> props.history.push(`/games/${game.id}`)}>
                         <div className="game__title">{game.title} by {game.designer}</div>
                         <div className="game__release">released: {game.year_released}</div>
                         <div className="game__description">{game.description}</div>
